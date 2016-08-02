@@ -1,0 +1,8 @@
+.idea
+**/build
+*.iml
+**/classes
+.gradle
+*.box
+.vagrant
+cache/**/*
