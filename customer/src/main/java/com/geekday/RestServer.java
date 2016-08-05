@@ -1,9 +1,7 @@
 package com.geekday;
 
-import com.geekday.accounting.customer.domain.AccountSubscriber;
 import com.geekday.accounting.customer.domain.CustomerRepository;
 import com.geekday.accounting.customer.web.CustomerResource;
-import com.geekday.common.DomainEventPublisher;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -18,9 +16,6 @@ public class RestServer {
 
     private static void initializeApplication() {
         CustomerRepository.initialize();
-
-        DomainEventPublisher.start();
-        new AccountSubscriber().start();
     }
 
     private static void startWebServer() {
