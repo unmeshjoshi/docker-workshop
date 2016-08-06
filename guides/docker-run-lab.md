@@ -7,6 +7,17 @@ We have three services:
 - customerservice
 
 They are dependent on each other to function properly.
+Compiling Services
+=======================
+```bash
+$ cd customerweb
+$ ./gradlew  clean build shadowJar copyDockerFile
+$ cd ../account
+$ ./gradlew  clean build shadowJar copyDockerFile
+$ cd ../customer
+$ ./gradlew  clean build shadowJar copyDockerFile
+```
+
 
 Building Service Images
 =======================
