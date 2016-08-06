@@ -20,7 +20,7 @@ Pushing an image into the registry
 We need to tag images with a prefix that specifies the registry they will end up in. Let's tag our customer service to point to the local registry:
 
 ```bash
-$ docker tag customerservice localhost:5000/customerservice
+$ docker tag customer-service-image localhost:5000/customerservice
 ```
 
 Now let's push it.
