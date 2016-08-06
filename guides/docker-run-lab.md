@@ -26,11 +26,11 @@ We assume that you have run `gradle build` to compile each service. Each service
 
 ```bash
 $ cd customerweb
-$ docker -t customerweb-image ./build
+$ docker build -t customerweb-image ./build
 $ cd ../account
-$ docker -t account-service-image ./build
+$ docker build -t account-service-image ./build
 $ cd ../customer
-$ docker -t customer-service-image ./build
+$ docker build -t customer-service-image ./build
 ```
 
 Creating docker network
