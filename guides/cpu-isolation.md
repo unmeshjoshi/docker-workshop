@@ -58,7 +58,7 @@ $ echo $$
 root      4061  0.0  0.1  64956  3920 pts/0    S    01:29   0:00 sudo chroot jail/ busybox sh
 $ sudo su
 # echo 3276 > /sys/fs/cgroup/cpuset/chroot/tasks
-# chroot jail/ busybox sh
+$ sudo chroot jail/ busybox sh
 / # stress -c 2
 stress: info: [4148] dispatching hogs: 2 cpu, 0 io, 0 vm, 0 hdd
 ```
